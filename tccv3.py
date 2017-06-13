@@ -1145,8 +1145,8 @@ class TCC(wx.Frame):
         nb.AddPage(initPage,"Initialization")
         self.init=nb.GetPage(2)
 
-        #nb.AddPage(logPage,"Night Log")
-        #self.nl=nb.GetPage(3)
+        nb.AddPage(logPage,"Night Log")
+        self.nl=nb.GetPage(3)
 
         #Control Tab Bindings
         self.Bind(wx.EVT_BUTTON, self.startSlew, self.control.slewButton)
